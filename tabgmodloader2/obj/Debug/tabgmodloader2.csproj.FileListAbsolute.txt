@@ -1,0 +1,9 @@
+D:\dont open me\tabg\loader\tabgmodloader2\tml\tabgmodloader2\bin\Debug\tabgmodloader2.exe.config
+D:\dont open me\tabg\loader\tabgmodloader2\tml\tabgmodloader2\bin\Debug\tabgmodloader2.exe
+D:\dont open me\tabg\loader\tabgmodloader2\tml\tabgmodloader2\bin\Debug\tabgmodloader2.pdb
+D:\dont open me\tabg\loader\tabgmodloader2\tml\tabgmodloader2\obj\Debug\tabgmodloader2.main.resources
+D:\dont open me\tabg\loader\tabgmodloader2\tml\tabgmodloader2\obj\Debug\tabgmodloader2.Properties.Resources.resources
+D:\dont open me\tabg\loader\tabgmodloader2\tml\tabgmodloader2\obj\Debug\tabgmodloader2.csproj.GenerateResource.cache
+D:\dont open me\tabg\loader\tabgmodloader2\tml\tabgmodloader2\obj\Debug\tabgmodloader2.csproj.CoreCompileInputs.cache
+D:\dont open me\tabg\loader\tabgmodloader2\tml\tabgmodloader2\obj\Debug\tabgmodloader2.exe
+D:\dont open me\tabg\loader\tabgmodloader2\tml\tabgmodloader2\obj\Debug\tabgmodloader2.pdb

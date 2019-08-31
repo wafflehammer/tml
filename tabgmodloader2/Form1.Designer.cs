@@ -33,7 +33,6 @@
             this.titlebarletters = new System.Windows.Forms.Label();
             this.closeButton = new System.Windows.Forms.PictureBox();
             this.minButton = new System.Windows.Forms.PictureBox();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.vanilla = new System.Windows.Forms.Button();
             this.modded = new System.Windows.Forms.Button();
             this.progressbar = new System.Windows.Forms.PictureBox();
@@ -51,7 +50,7 @@
             this.titlebar.Dock = System.Windows.Forms.DockStyle.Top;
             this.titlebar.Location = new System.Drawing.Point(0, 0);
             this.titlebar.Name = "titlebar";
-            this.titlebar.Size = new System.Drawing.Size(800, 16);
+            this.titlebar.Size = new System.Drawing.Size(478, 16);
             this.titlebar.TabIndex = 0;
             this.titlebar.TabStop = false;
             this.titlebar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Titlebar_MouseDown);
@@ -74,7 +73,7 @@
             // 
             this.closeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.closeButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("closeButton.BackgroundImage")));
-            this.closeButton.Location = new System.Drawing.Point(776, 0);
+            this.closeButton.Location = new System.Drawing.Point(454, 0);
             this.closeButton.Margin = new System.Windows.Forms.Padding(0);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(24, 16);
@@ -88,7 +87,7 @@
             // 
             this.minButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.minButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("minButton.BackgroundImage")));
-            this.minButton.Location = new System.Drawing.Point(760, 0);
+            this.minButton.Location = new System.Drawing.Point(438, 0);
             this.minButton.Margin = new System.Windows.Forms.Padding(0);
             this.minButton.Name = "minButton";
             this.minButton.Size = new System.Drawing.Size(16, 16);
@@ -98,20 +97,6 @@
             this.minButton.MouseEnter += new System.EventHandler(this.MinButton_MouseEnter);
             this.minButton.MouseLeave += new System.EventHandler(this.MinButton_MouseLeave);
             // 
-            // webBrowser1
-            // 
-            this.webBrowser1.AllowNavigation = false;
-            this.webBrowser1.AllowWebBrowserDrop = false;
-            this.webBrowser1.IsWebBrowserContextMenuEnabled = false;
-            this.webBrowser1.Location = new System.Drawing.Point(0, 22);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.ScriptErrorsSuppressed = true;
-            this.webBrowser1.Size = new System.Drawing.Size(800, 330);
-            this.webBrowser1.TabIndex = 4;
-            this.webBrowser1.Url = new System.Uri("https://4chords.cc/loader/changelog.html", System.UriKind.Absolute);
-            this.webBrowser1.WebBrowserShortcutsEnabled = false;
-            // 
             // vanilla
             // 
             this.vanilla.BackgroundImage = global::tabgmodloader2.Properties.Resources._3;
@@ -119,9 +104,9 @@
             this.vanilla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.vanilla.Font = new System.Drawing.Font("Wavehaus 42 Light", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vanilla.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.vanilla.Location = new System.Drawing.Point(12, 358);
+            this.vanilla.Location = new System.Drawing.Point(12, 22);
             this.vanilla.Name = "vanilla";
-            this.vanilla.Size = new System.Drawing.Size(385, 80);
+            this.vanilla.Size = new System.Drawing.Size(222, 80);
             this.vanilla.TabIndex = 5;
             this.vanilla.Text = "Vanilla";
             this.vanilla.UseVisualStyleBackColor = true;
@@ -136,9 +121,9 @@
             this.modded.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.modded.Image = global::tabgmodloader2.Properties.Resources._3;
             this.modded.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.modded.Location = new System.Drawing.Point(403, 358);
+            this.modded.Location = new System.Drawing.Point(244, 22);
             this.modded.Name = "modded";
-            this.modded.Size = new System.Drawing.Size(385, 80);
+            this.modded.Size = new System.Drawing.Size(222, 80);
             this.modded.TabIndex = 6;
             this.modded.Text = "Modded";
             this.modded.UseVisualStyleBackColor = true;
@@ -146,10 +131,10 @@
             // 
             // progressbar
             // 
-            this.progressbar.Location = new System.Drawing.Point(0, 452);
+            this.progressbar.Location = new System.Drawing.Point(0, 105);
             this.progressbar.Margin = new System.Windows.Forms.Padding(0);
             this.progressbar.Name = "progressbar";
-            this.progressbar.Size = new System.Drawing.Size(0, 5);
+            this.progressbar.Size = new System.Drawing.Size(0, 16);
             this.progressbar.TabIndex = 7;
             this.progressbar.TabStop = false;
             // 
@@ -171,12 +156,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::tabgmodloader2.Properties.Resources._4;
-            this.ClientSize = new System.Drawing.Size(800, 457);
+            this.ClientSize = new System.Drawing.Size(478, 108);
             this.Controls.Add(this.load);
             this.Controls.Add(this.progressbar);
             this.Controls.Add(this.modded);
             this.Controls.Add(this.vanilla);
-            this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.minButton);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.titlebarletters);
@@ -199,7 +183,6 @@
         private System.Windows.Forms.Label titlebarletters;
         private System.Windows.Forms.PictureBox closeButton;
         private System.Windows.Forms.PictureBox minButton;
-        private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Button vanilla;
         private System.Windows.Forms.Button modded;
         private System.Windows.Forms.PictureBox progressbar;

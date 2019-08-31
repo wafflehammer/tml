@@ -37,19 +37,6 @@ namespace tabgmodloader2
                 File.Delete(Path.GetTempPath() + @"dl.dll");
             }
         }
-
-
-        [DllImport("kernel32.dll")]
-        static extern bool CreateSymbolicLink(
-        string lpSymlinkFileName, string lpTargetFileName, SymbolicLink dwFlags);
-
-        enum SymbolicLink
-        {
-            File = 0,
-            Directory = 1
-        }
-        //  CreateSymbolicLink(symbolicLink, fileName, SymbolicLink.File);
-
         public void GetArgs()
         {
             foreach (string arg in Environment.GetCommandLineArgs())
@@ -110,8 +97,9 @@ namespace tabgmodloader2
                 install = (String)myKey.GetValue("InstallLocation");
             } catch
             {
-                MessageBox.Show("Game not found in Steam Directory", "Error",  MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Environment.Exit(-1);
+                MessageBox.Show("Game not found in Steam Directory. The loader wont work properly!", "Warning!",  MessageBoxButtons.OK, MessageBoxIcon.Information);
+                install = "Uh-oh...";
+                //Environment.Exit(-1);
             }
             titlebarletters.Text += " | ";
             load.Text += install;
@@ -120,7 +108,7 @@ namespace tabgmodloader2
 
         public void Progress(int p)
         {
-            progressbar.Width = p*800/100;
+            progressbar.Width = p*478/ 100;
             progressbar.BackColor = GetBlendedColor(p);
             return;
         }
