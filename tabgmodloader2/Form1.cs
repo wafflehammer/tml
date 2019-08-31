@@ -84,7 +84,7 @@ namespace tabgmodloader2
         {
             int temp;
             WebClient client = new WebClient();
-            Stream stream = client.OpenRead("https://4chords.cc/loader/v");
+            Stream stream = client.OpenRead("https://raw.githubusercontent.com/mhnd4414/tml/master/v");
             StreamReader reader = new StreamReader(stream);
             String content = reader.ReadToEnd();
             int.TryParse(content, out temp);
@@ -93,7 +93,7 @@ namespace tabgmodloader2
                 DialogResult result = MessageBox.Show("An update is required before you can use TABG Mod Loader", "Update Available", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                 if (result == DialogResult.OK)
                 {
-                    Process.Start("https://4chords.cc/loader/download");
+                    Process.Start("https://github.com/mhnd4414/tml");
                     Environment.Exit(11);
                 }
                 else
