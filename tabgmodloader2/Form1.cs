@@ -23,7 +23,7 @@ namespace tabgmodloader2
         public string install;
         public bool log = false;
 
-        public int UPDATEMEORDIE = 4;
+        public int UPDATEMEORDIE = 9;
 
 
         public main()
